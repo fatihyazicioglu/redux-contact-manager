@@ -1,3 +1,17 @@
+// In order to connect our component to the store, we need to call the connect() function.
+// The connect() function returns a new component, that wraps the component you passed to it and connects it to the store using its special parameter functions.
+// function connect(mapStateToProps?, mapDispatchToProps?) 
+// JS
+// connect() takes two optional parameters:
+
+// mapStateToProps
+// This function is called every time the store state changes. It receives the state as a parameter and returns the state for the component.
+// For example, for our Counter, we need to return the count state variable:
+// function mapStateToProps(state) {
+//   return {
+//     count: state.count
+//   };
+// }
 import React, { useState } from 'react';
 import { connect } from 'react-redux'
 import { addPerson } from '../actions'
@@ -32,3 +46,17 @@ const mapDipatchToProps = {
 }
 
 export default connect(null, mapDipatchToProps)(AddPersonForm)
+// In order to connect our component to the store, we need to call the connect() function.
+// The connect() function returns a new component, that wraps the component you passed to it and connects it to the store using its special parameter functions.
+// function connect(mapStateToProps?, mapDispatchToProps?) 
+// JS
+// connect() takes two optional parameters:
+
+// mapStateToProps
+// This function is called every time the store state changes. It receives the state as a parameter and returns the state for the component.
+// For example, for our Counter, we need to return the count state variable:
+// function mapStateToProps(state) {
+//   return {
+//     count: state.count
+//   };
+// }
